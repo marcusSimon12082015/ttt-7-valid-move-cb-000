@@ -23,5 +23,5 @@ def position_taken?(board,index)
   end
 end
 def is_valid_index?(index)
-  return index.between?(0,9)
+  return index.between?(0,8)
 end
