@@ -1,0 +1,51 @@
+
+./lib/valid_move.rb
+  returns true for a valid position on an empty board (FAILED - 1)
+  returns true for a valid position on a non-empty board (FAILED - 2)
+  returns nil or false for an occupied position (FAILED - 3)
+  returns nil or false for a position that is not on the board (FAILED - 4)
+
+Failures:
+
+  1) ./lib/valid_move.rb returns true for a valid position on an empty board
+     Failure/Error: expect(valid_move?(board, index)).to be_truthy
+     NoMethodError:
+       undefined method `is_valid_index' for #<RSpec::ExampleGroups::LibValidMoveRb:0x00000002bf0598>
+       Did you mean?  is_valid_index?
+     # ./lib/valid_move.rb:4:in `valid_move?'
+     # ./spec/valid_move_spec.rb:7:in `block (2 levels) in <top (required)>'
+
+  2) ./lib/valid_move.rb returns true for a valid position on a non-empty board
+     Failure/Error: expect(valid_move?(board, index)).to be_truthy
+     NoMethodError:
+       undefined method `is_valid_index' for #<RSpec::ExampleGroups::LibValidMoveRb:0x00000002be6ed0>
+       Did you mean?  is_valid_index?
+     # ./lib/valid_move.rb:4:in `valid_move?'
+     # ./spec/valid_move_spec.rb:13:in `block (2 levels) in <top (required)>'
+
+  3) ./lib/valid_move.rb returns nil or false for an occupied position
+     Failure/Error: expect(valid_move?(board, index)).to be_falsey
+     NoMethodError:
+       undefined method `is_valid_index' for #<RSpec::ExampleGroups::LibValidMoveRb:0x00000002be59e0>
+       Did you mean?  is_valid_index?
+     # ./lib/valid_move.rb:4:in `valid_move?'
+     # ./spec/valid_move_spec.rb:20:in `block (2 levels) in <top (required)>'
+
+  4) ./lib/valid_move.rb returns nil or false for a position that is not on the board
+     Failure/Error: expect(valid_move?(board, index)).to be_falsey
+     NoMethodError:
+       undefined method `is_valid_index' for #<RSpec::ExampleGroups::LibValidMoveRb:0x00000002be7ad8>
+       Did you mean?  is_valid_index?
+     # ./lib/valid_move.rb:4:in `valid_move?'
+     # ./spec/valid_move_spec.rb:27:in `block (2 levels) in <top (required)>'
+
+Finished in 0.00156 seconds (files took 0.19279 seconds to load)
+4 examples, 4 failures
+
+Failed examples:
+
+rspec ./spec/valid_move_spec.rb:4 # ./lib/valid_move.rb returns true for a valid position on an empty board
+rspec ./spec/valid_move_spec.rb:10 # ./lib/valid_move.rb returns true for a valid position on a non-empty board
+rspec ./spec/valid_move_spec.rb:16 # ./lib/valid_move.rb returns nil or false for an occupied position
+rspec ./spec/valid_move_spec.rb:23 # ./lib/valid_move.rb returns nil or false for a position that is not on the board
+
